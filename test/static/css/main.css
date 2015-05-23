@@ -37,6 +37,24 @@ body {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
+	display: inline-block;
+	line-height: 25px;
+}
+.header .nav > a.active {
+	background: #1D1D1D;
+	padding: 4px 8px 4px 8px;
+	border-radius: 5px;
+}
+.header .nav > a.active:hover:after {
+	background: transparent;
+}
+.header .nav > a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
 
 	-webkit-transition: all 200ms;
 	-moz-transition: all 200ms;
@@ -44,11 +62,9 @@ body {
 	-o-transition: all 200ms;
 	transition: all 200ms;
 }
-.header .nav > a.active {
-	border-bottom: 2px solid #fff;
-}
-.header .nav > a:hover {
-	border-bottom: 2px solid #fff;
+.header .nav > a:hover:after {
+	width: 100%;
+	background: #fff;
 }
 .header .jumbo {
 	top: 130px;
