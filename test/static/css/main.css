@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #F2F2F2;
+	font-family: 'Lato', sans-serif;
+}
+.header {
+	height: 400px;
+	width: 100%;
+	background: #FF9900;
+}
+.header #particles {
+	height: 400px;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 99;
+}
+.header * {
+	position: relative;
+	z-index: 100;
+}
+.header .nav {
+	position: absolute;
+	right: 55px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 0;
+}
+.header .nav > a {
+	font-size: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+.header .nav > a.active {
+	border-bottom: 2px solid #fff;
+}
+.header .nav > a:hover {
+	border-bottom: 2px solid #fff;
+}
+.header .jumbo {
+	top: 130px;
+	text-align: center;
+	color: #fff;
+}
+.header .jumbo > h1 {
+	font-size: 5em;
+}
+.header .jumbo > p {
+	margin-bottom: 15px;
+}
+.header .jumbo > a {
+	width: 100px;
+	height: 35px;
+	line-height: 33px;
+	margin: auto;
+	display: block;
+	background: #1D1D1D;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+.header .jumbo > a:hover {
+	color: #FF9900;
+}
+.features {
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 35px;
+}
+.features .box {
+	background: #fff;
+	padding: 15px;
+	min-width: 200px;
+	border-radius: 5px;
+	width: 200px;
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	-webkit-box-shadow: 0px 1.5px 1px 1px rgba(0,0,0,0.19);
+	-moz-box-shadow: 0px 1.5px 1px 1px rgba(0,0,0,0.19);
+	box-shadow: 0px 1.5px 1px 1px rgba(0,0,0,0.19);
+}
+.features .box h2 {
+	font-weight: 300;
+}
+
+/* Containers */
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
