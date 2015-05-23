@@ -1,8 +1,11 @@
 "use strict";
-var Website = function(req, res){
-  this.lib = require("./lib");
-  req.tools = this.lib.tools(req, res);
-  this.lib.pages(req, res);
+var lib = require("./lib"), tools,
+Website = function(req, res){
+  tools = new lib.tools(req, res);
+  req.tools = tools.req;
+  res.tools = tools.res;
+
+  lib.pages(req, res, tools.lib); 
 };
 
 module.exports = exports = Website;
