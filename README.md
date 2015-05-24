@@ -1,2 +1,3 @@
-# Platform
+Platform
+========
 The platform server.
