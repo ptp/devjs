@@ -37,7 +37,7 @@
       "mocha": true
     }
   },
-  "repository": "git@github.com:devjs/platform.git",
+  "repository": "git@github.com:devjs/devjs.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
