@@ -1,6 +1,3 @@
-## Node Modules
-node_modules/*
-
-## Generic
-._*
-.DS_Store
+node_modules
+coverage
+dist

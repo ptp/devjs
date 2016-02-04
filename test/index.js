@@ -1,8 +1,8 @@
-var http = require("http"),
-    mst  = require("mustache"),
-    handler = require("./../");
+import assert from 'assert';
+import devjs from '../lib';
 
-var server = http.createServer(handler)
-.listen(3000, function(){
-  console.log(" - Server online at http://localhost/ on port: " + server.address().port);
+describe('devjs', function () {
+  it('should have unit test!', function () {
+    assert(false, 'we expected this package author to add actual unit tests.');
+  });
 });
