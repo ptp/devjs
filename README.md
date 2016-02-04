@@ -2,18 +2,10 @@
 > DevJS&#39;s home/info website
 
 ## Installation
-
 ```sh
-$ npm install --save devjs
+$ npm i -g devjs/devjs
 ```
 
-## Usage
-
-```js
-var devjs = require('devjs');
-
-devjs('Rainbow');
-```
 ## License
 
  © [DevJS](https://devjs.org/team)
