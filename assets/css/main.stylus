@@ -1,0 +1,367 @@
+@import 'fonts.css'
+Roboto-Light = 'Roboto-Light', sans-serif;
+Roboto-Medium = 'Roboto-Medium', sans-serif;
+Roboto-Regular = 'Roboto-Regular', sans-serif;
+Open-Sans = 'OpenSans-Regular', sans-serif;
+Lato = 'Lato', sans-serif;
+headerHeight = 35em
+animation()
+	-webkit-transition arguments
+	-moz-transition arguments
+	-ms-transition arguments
+	-o-transition arguments
+	transition arguments
+*
+	margin 0
+	padding 0
+.header
+	height headerHeight
+	background #abcdef
+	position relative
+	.overlay
+		position absolute
+		width 100%
+		height headerHeight
+		background rgba(#000000, 0.8)
+	.menu
+		position relative
+		width 100%
+		z-index 101
+		height 80px
+		line-height 80px
+		//border-bottom 1px solid rgba(#ffffff, 0.2)
+		&.sticky
+			background #fff
+			position fixed
+			top 0
+			width 100%
+			z-index 150
+			height 80px
+			
+			animation(all 500ms)
+			-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+			.menu-left
+				a
+					color #1d1d1d !important
+			.menu-right
+				a
+					color #1d1d1d !important
+		.menu-left
+			display inline-block
+			margin-left 55px
+			.brand
+				a
+					font-family Roboto-Regular
+					color #fff
+		.menu-right
+			display inline-block
+			float right
+			margin-right 55px
+			font-size 0px
+			.btn
+				display inline-block
+				min-width 45px
+				text-align center
+				margin-left 8px
+				margin-right 8px
+				&.active
+					a
+						opacity 1
+						font-weight bold
+				a
+					color #fff
+					font-family Roboto-Light
+					font-size 14px
+					opacity 0.6
+					animation(all 200ms)
+					&:hover
+						opacity 1
+	.pull
+		color #fff
+		font-size 2em
+		display none
+	.layer
+		position absolute
+		height headerHeight
+		width 100%
+		z-index 99
+		opacity 0.4
+	.header-container
+		width 100%
+		margin auto
+		text-align center
+		z-index 101
+		position relative
+		h1
+			margin-top 2.5em
+			font-family Open-Sans
+			color #fff
+			font-size 4em
+		p
+			color #fff
+			font-family Lato
+.content
+	width 100%
+	.container
+		width 65%
+		margin auto
+		margin-top 2em
+		.content-header
+			font-size 2em
+			font-family Open-Sans
+			border-bottom 1px solid rgba(#000, 0.2)
+			margin-bottom 25px
+			padding-bottom 25px
+		.content-content
+			font-family Lato
+			line-height 25px
+			color #1d1d1d
+			.btn
+				margin-top 25px
+		.content-divider
+			height 5em
+.footer
+	min-height 150px
+	margin-top 150px
+	background #22282F
+	.inner
+		width 65%	
+		margin auto
+		padding 25px
+		.cols
+			.col
+				display inline-block
+				vertical-align top
+				margin-left 15px
+				margin-right 15px
+				h3
+					color #eee
+					font-family Open-Sans
+					font-size 14px
+					border-bottom 1px solid rgba(#eee, 0.2)
+					padding-bottom 8px
+					margin-bottom 8px
+				ul
+					list-style none
+					li
+						height 20px
+						a
+							color #999
+							font-family Open-Sans
+							font-size 12px
+							&:hover
+								text-decoration underline
+		.copyright
+			margin-top 25px
+			color rgba(#fff, 0.4)
+			font-family Open-Sans
+			padding-top 8px
+			border-top 1px solid rgba(#fff, 0.2)
+			font-size 14px
+			margin-left 15px
+			display inline-block
+			width 100%
+			.agreements
+				display inline-block
+				vertical-align top
+				a
+					color #eee
+					position relative
+					top -20px
+					opacity 0.6
+					margin-left 8px
+					margin-right 8px
+					animation(opacity 200ms)
+					&:hover
+						opacity 1
+.btn
+	display inline-block
+	margin-bottom 0
+	font-weight normal
+	text-align center
+	vertical-align middle
+	cursor pointer
+	background-image none
+	border 1px solid transparent
+	white-space nowrap
+	padding 6px 16px
+	font-size 13px
+	line-height 1.846
+	border-radius 3px
+	font-family Lato
+	animation(opacity 200ms)
+	&:hover
+		opacity 0.8
+	&.normal
+		color #eee
+		background-color #22282F
+		border-color #eee
+	&.warning
+		color #eee
+		background-color #c00000
+		border-color #eee
+	&.success
+		color #eee
+		background-color #4caf50
+		border-color #eee
+.pull-right
+	float right
+//Normalize
+a
+	text-decoration none
+	
+//Responsive
+@media only screen and (max-width : 600px)
+	.header
+		height headerHeight
+		background #abcdef
+		position relative
+		.overlay
+			position absolute
+			width 100%
+			height headerHeight
+			background rgba(#000000, 0.8)
+		.pull
+			display inline-block
+			float right
+			background #1F242A
+			text-align right
+			z-index 200
+			position relative
+			i
+				margin-right 25px
+		.menu
+			position relative
+			z-index 200
+			height auto
+			line-height auto
+			//border-bottom 1px solid rgba(#ffffff, 0.2)
+			&.sticky
+				background #fff
+				position fixed
+				top 0
+				width 100%
+				z-index 150
+				height 80px
+				
+				animation(all 500ms)
+				-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				.menu-left
+					a
+						color #1d1d1d !important
+				.menu-right
+					a
+						color #1d1d1d !important
+			.menu-left
+				display inline-block
+				margin-left 55px
+				display none
+				.brand
+					a
+						font-family Roboto-Regular
+						color #fff
+			.menu-right
+				display inline-block
+				float left
+				margin-right 0px
+				font-size 0px
+				background #383D44
+				width 100%
+				.btn
+					display block
+					text-align left
+					margin-left 0px
+					margin-right 0px
+					&.active
+						a
+							opacity 1
+							font-weight bold
+					a
+						color #fff
+						font-family Roboto-Light
+						font-size 14px
+						opacity 0.6
+						display inline-block
+						animation(all 200ms)
+						&:hover
+							opacity 1
+@media only screen and (max-width : 480px)
+	.header
+		height headerHeight
+		background #abcdef
+		position relative
+		.overlay
+			position absolute
+			width 100%
+			height headerHeight
+			background rgba(#000000, 0.8)
+		.pull
+			display inline-block
+			width 100%
+			float right
+			background #1F242A
+			text-align right
+			z-index 200
+			i
+				margin-right 25px
+		.menu
+			position relative
+			z-index 101
+			height 80px
+			line-height 80px
+			//border-bottom 1px solid rgba(#ffffff, 0.2)
+			&.sticky
+				background #fff
+				position fixed
+				top 0
+				width 100%
+				z-index 150
+				height 80px
+				
+				animation(all 500ms)
+				-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+				.menu-left
+					a
+						color #1d1d1d !important
+				.menu-right
+					a
+						color #1d1d1d !important
+			.menu-left
+				display inline-block
+				margin-left 55px
+				display none
+				.brand
+					a
+						font-family Roboto-Regular
+						color #fff
+			.menu-right
+				display inline-block
+				float left
+				margin-right 0px
+				font-size 0px
+				background #383D44
+				width 100%
+				.btn
+					display block
+					text-align left
+					margin-left 0px
+					margin-right 0px
+					&.active
+						a
+							opacity 1
+							font-weight bold
+					a
+						color #fff
+						font-family Roboto-Light
+						font-size 14px
+						opacity 0.6
+						display inline-block
+						animation(all 200ms)
+						&:hover
+							opacity 1

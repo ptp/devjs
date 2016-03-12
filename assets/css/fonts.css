@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Robot-Medium';
+	src: url('../fonts/Robot-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
